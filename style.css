@@ -1,0 +1,689 @@
+/* Start Default Settings */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* End Default Settings */ 
+
+
+/*Start  navbar*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px 0px;
+}
+
+nav .logo {
+    width: 160px;
+	margin: 0px 2px 0px -25px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li a {
+    margin: 0 12px;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav .btnLogin {
+    position: relative;
+}
+
+nav .btnLogin img {
+    width: 120px;
+    height: 40px;
+}
+
+nav .btnLogin span {
+    position: absolute;
+    left: 30%;
+    top: 15%;
+    font-size: 18px;
+    color: #333;
+}
+
+
+
+.navItem{
+    transition: 0.8s;
+}
+
+.navItem:hover,
+.navItem:active,
+.navItem:focus
+{
+    color: #b219db;
+}
+
+.navItem:hover::after,
+.navItem:active::after,
+.navItem:focus::after
+{
+    content: "";
+    width: 100%;
+    height: 5%;
+    transition: 5s;
+    background-color: #b219db;
+    display: inline-block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
+
+
+
+/* End navbar */ 
+
+
+
+
+/*Start LandingPage section*/
+
+.landingPageSection {
+    position: relative;
+}
+
+.landingPageBackground {
+    position: absolute;
+    width: 100%;
+    height: 640px;
+    z-index: -1000;
+}
+
+.divLanding {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px 0px 140px;
+    position: relative;
+}
+
+
+.bgDeliveryPerson {
+	position: absolute;
+    width: 110%;
+	margin:50px 0px 0px 20px;
+	top:-29%;
+
+}
+
+.deliveryPerson {
+    position: absolute;
+    width: 50%;
+	left: 30%;
+    top:-4%;
+    
+}
+
+.clouds {
+    position: absolute;
+    width: 70%;
+    left: 25%;
+    top:110%;
+}
+
+.waves {
+    position: absolute;
+    width: 100%;
+    top: 118%;
+    right:25%;
+}
+
+
+
+.divText {
+    padding-top: 170px;
+    width: 50%;
+	
+}
+
+.divText h3 {
+    font-size: 50px;
+    color: #637279;
+    font-weight: 600;
+}
+
+.divText h3 span {
+    color: #7a3d8a;
+}
+
+.divText p {
+    color: #afafaf;
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.divImgs {
+    width: 50%;
+    position: relative;
+}
+
+/*End LandingPage section*/
+
+
+
+
+/*Start Choice Section*/
+
+.choiceSection {
+    position: relative;
+    text-align: center;
+    padding: 0px 100px;
+    height: 120vh;
+}
+
+.choiceSectionBackground {
+    position: absolute;
+    width: 60%;
+    top: 45%;
+    left: 22%;
+    height: 65%;
+}
+
+.choiceContainer div {
+    width: 400px;
+}
+
+.choiceContainer div img {
+    width: 250px;
+}
+
+.choiceContainer div h3 {
+    color: #999;
+    font-size: 25px;
+}
+
+.choiceContainer div p {
+    color: #b9b9b9;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.divSuperDelivery {
+    position: absolute;
+    top: 54%;
+    left: 5%;
+}
+
+ .divTracking {
+    position: absolute;
+    top: 66%;
+    left: 37%;
+}
+
+.divDiscounts {
+    position: absolute;
+    top: 108%;
+    right: 14%;
+}
+
+.divKudzokaContainer {
+    position: absolute;
+    top: 108%;
+    left: 10%;
+}
+
+.divKudzokaBackground {
+    position: relative;
+}
+
+.divKudzokaBackground img {
+    width: 350px;
+}
+
+.divKudzokaBackground div {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    text-align: left;
+}
+
+.divKudzokaBackground div p {
+    color: white;
+    font-size: 25px;
+}
+
+.divKudzokaBackground div h3 {
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+/*Choice Section section*/
+
+
+
+
+
+/*Start Support Section*/
+
+.supportSection {
+    padding-top: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.divSupportContainer {
+    padding: 0 30px;
+}
+
+.divSupportContainer h3 {
+    color: #999;
+    font-size: 25px;
+}
+
+.divSupportContainer p {
+    color: #b9b9b9;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+ .mainImg {
+        /*width: 50%;*/
+}
+
+ .smallImg {
+        /*width: 20%;*/
+}
+
+/*End Support Section*/
+
+
+
+
+/*Start Footer Section*/
+
+footer {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.footerBackgroud {
+    position: absolute;
+    width: 115%;
+    height: 160%;
+    left: -3%;
+    top: -8%;
+
+}
+
+.footerPeople {
+    position: absolute;
+    width: 45vw;
+    right: 3%;
+    bottom: 0%;
+	top: 20%;
+
+}
+
+footer .footerText {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-top: 30px;
+}
+
+footer ul li a {
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.socialimgs {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.socialimgs img {
+    width: 25px;
+    height: 26px;
+    margin-right: 15px;
+
+}
+
+.footerButton {
+    position: relative;
+    width: 130px;
+    height: 50px;
+    margin-right: 35px;
+}
+
+.footerButton .btnImg {
+    width: 130px;
+    height: 50px;
+}
+
+.footerButton div {
+    position: absolute;
+    left: 10%;
+    bottom: 40%;
+    display: flex;
+    align-items: center;
+
+}
+
+.footerButton div p {
+    font-size: 12px;
+    color: #333;
+}
+
+.footerButton div span {
+    display: block;
+    color: #7a3d8a;
+    font-size: 18px;
+}
+
+/*End Footer Section*/
+
+
+
+
+
+
+@media only screen and (max-width:576px) {
+
+
+   /*Start  navbar*/
+   
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 5px 5px 0px;
+	}
+
+	nav .logo {
+		width: 100px;
+		margin: 0px 2px 0px -25px;
+	}
+
+    nav ul li a {
+        font-size: 10px;
+    }
+
+    nav img {
+        width: 50px;
+    }
+
+    nav .loginBtn img {
+        width: 45px;
+        height: 12px;
+    }
+
+    nav .loginBtn span {
+        left: 35%;
+        top: 18%;
+        font-size: 10x;
+    }
+	
+	
+	/*End  navbar*/
+
+	
+    /*Start LandingPage section*/
+
+	
+    .landingPageBackground {
+        height: 180px;
+		display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+		
+    }
+
+
+
+    .divText {
+        padding-top: 25px;
+    }
+
+    .divText h3 {
+        font-size: 12px;
+		width:100%;
+		
+    }
+
+    .divText p {
+        font-size: 10px;
+		width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+	
+		
+	.divImgs {
+		width: 50%;
+		position: relative;
+	}
+	
+	.divLanding {
+		display: flex;
+		justify-content: space-between;
+		padding: 0px 80px 0px 140px;
+		position: relative;
+	}
+
+
+	.bgDeliveryPerson {
+		position: absolute;
+		width: 110%;
+		margin:50px 0px 0px 20px;
+		top:-50%;
+
+	}
+
+	.deliveryPerson {
+		position: absolute;
+		width: 50%;
+		left: 30%;
+		top:-4%;
+		
+	}
+
+	.clouds {
+		position: absolute;
+		width: 70%;
+		left: 25%;
+		top:65%;
+	}
+
+	.waves {
+		position: absolute;
+		width: 100%;
+		top: 80%;
+		right:25%;
+	}
+
+
+    /*End LandingPage section*/
+
+	
+
+    /*Start Choice Section*/
+
+	
+    .choiceSection {
+        height: 40vh;
+    }
+	
+	.choiceSectionBackground {
+    position: absolute;
+    width: 70%;
+    top: 10%;
+    left: 22%;
+    height: 65%;
+    }
+
+
+    .choiceContainer div {
+        width: 100px;
+    }
+
+    .choiceContainer div h3 {
+        font-size: 8px;
+    }
+
+    .choiceContainer div p {
+        font-size: 5px;
+        line-height: 8px;
+    }
+
+    .choiceContainer div img {
+        width: 50px;
+    }
+
+    .choiceContainer .divSuperDelivery {
+        top: 12%;
+        left: 8%;
+    }
+
+    .choiceContainer .divTracking {
+        position: absolute;
+        top: 28%;
+        left: 45%;
+    }
+
+    .choiceContainer .divDiscounts {
+        top: 55%;
+        right: 3%;
+    }
+
+    .divKudzokaContainer {
+        position: absolute;
+        top: 55%;
+        left: 10%;
+    }
+
+    .divKudzokaBackground img {
+        width: 100px;
+    }
+
+    .divKudzokaBackground div p {
+        color: white;
+        font-size: 5px;
+    }
+
+    .divKudzokaBackground div h3 {
+        font-size: 15px;
+    }
+	
+	
+	/*End Choice Section*/
+
+
+
+    /*Start Support Section*/
+
+	
+    .supportSection {
+        padding-top: 10px;
+    }
+
+    .divSupportContainer {
+        padding: 0 5px;
+    }
+
+    .divSupportContainer h3 {
+        font-size: 8px;
+    }
+
+    .divSupportContainer p {
+        font-size: 8px;
+    }
+
+    .supportSection .mainImg {
+        width: 180px;
+    }
+
+    .supportSection .smallImg {
+        width: 100px;
+    }
+	
+	/*End Support Section*/
+
+	
+	
+    /*Start Footer Section*/
+
+    footer {
+        height: 30vh;
+    }
+
+    footer ul {
+        margin-top: 2px;
+    }
+
+    footer ul li a {
+        font-size: 12px;
+    }
+
+    .socialimgs {
+        margin-top: 0px;
+    }
+
+    .socialimgs img {
+        width: 10px;
+        height: 10px;
+    }
+
+     .footerButton {
+        width: 65px;
+        height: 24px;
+    }
+
+     .footerButton .btnImg {
+        width: 65px;
+        height: 24px;
+    }
+
+     .footerButton div img {
+        width: 15px;
+    }
+
+     .footerButton div p {
+        font-size: 5px;
+    }
+
+     .footerButton div span {
+        font-size: 8px;
+    }
+
+   /*End Footer Section*/
+
+	
+	
+}
+
+
+
